@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<script src="Week10hw.js"></script>
+<link rel="stylesheet" href="10hwcss.css">
+
+<head>
+    </h1></center>
+    <title>
+        Task List
+    </title>
+</head>
+
+<body>
+
+	<div class="fighter-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>Task*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <div>
+                <label>Deadline</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+                <label>Category</label>
+                <input type="text" name="height" id="height">
+            </div>
+            <div>
+                <label>Priority</label>
+                <input type="text" name="weight" id="weight">
+            </div>
+            <div  class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+</div>
+<br/>
+<div class = "fighters-table">
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Deadline</th>
+                    <th>Category</th>
+                    <th>Priority</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+</div>
+</body>
+</html>
